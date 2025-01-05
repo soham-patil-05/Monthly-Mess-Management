@@ -1,0 +1,72 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    backdrop-filter: blur(10px); /* Apply blur effect to background */
+    z-index: 999; /* Ensure overlay is behind popup block */
+  }
+  
+  .eachmess {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #333; /* Dark theme background */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+    animation: slideIn 0.5s forwards; /* Animation for slide in effect */
+    min-width: 50%; /* Minimum width of 50% */
+    min-height: 50%; /* Minimum height of 50% */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  .eachmess img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .eachmess h1 {
+    font-size: 28px; /* Increase font size */
+    margin-bottom: 10px;
+  }
+  
+  .eachmess p {
+    margin-bottom: 10px;
+  }
+  
+  .eachmess button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff; /* Button background color */
+    color: #333; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .eachmess button:hover {
+    background-color: #ccc; /* Button background color on hover */
+  }
+  

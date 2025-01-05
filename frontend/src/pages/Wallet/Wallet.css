@@ -1,0 +1,32 @@
+.walletmesses {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .walletmesses > div {
+    margin: 30px;
+    width: 40%; /* Each block takes half of the row */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(112, 135, 156); /* Dark theme background */
+    color: #060606; /* Text color */
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .walletmesses > div h2,
+  .walletmesses > div p {
+    margin-bottom: 10px;
+  }
+  
+  .walletmesses > div h2 {
+    font-size: 24px; /* Increased font size for headings */
+  }
+  
+  .walletmesses > div p {
+    font-size: 20px; /* Increased font size for paragraphs */
+  }
+  
+  .walletmesses > div:hover {
+    background-color: #a8bfb0; /* Highlight background color on hover */
+  }
+  

@@ -1,0 +1,54 @@
+.allmesses{
+  margin-top: 30px;
+  background-image: url();
+}
+
+.messes {
+  margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .mess {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mess h2 {
+    margin-bottom: 10px;
+  }
+  
+  .mess p {
+    margin-bottom: 15px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mess {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .mess {
+      width: 100%;
+    }
+  }
+  .mess button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Cursor style on hover */
+    font-size: 16px; /* Button text size */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .mess button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+    

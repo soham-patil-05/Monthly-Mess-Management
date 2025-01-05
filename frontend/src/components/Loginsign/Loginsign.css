@@ -1,0 +1,161 @@
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Box */
+.box {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.box h2 {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form */
+.box2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Email label,
+.Pass label {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Cedarville Cursive", cursive;
+    color: #333;
+    margin-right: 10px;
+}
+
+.Email input,
+.Pass input {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fb6ee1;
+    border: 2px solid #dddddd;
+    width: 100%;
+    max-width: 300px;
+    font-size: 20px; 
+}
+
+/* Button */
+.sign {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 25px;
+    width: 50%;
+    max-width: 300px;
+    background-color: rgb(36, 239, 138);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign:hover {
+    background-color: rgb(50, 159, 94);
+}
+
+/* Images */
+.onion{
+    position: absolute;
+    top: -60px;
+    left: -190px;
+}
+
+.gulab {
+    position: absolute;
+    top: -60px;
+    right: -190px;
+}
+
+.thali {
+    position: absolute;
+    bottom: -10px;
+    left: -190px;
+}
+
+.pav {
+    position: absolute;
+    bottom: -10px;
+    right: -190px;
+}
+.onion,.gulab,.pav,.thali{
+    height: 150px;
+    width: 150px;
+}
+/* Container for radio buttons */
+.radio-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the radio button label */
+  .radio-label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hide default radio button */
+  .radio-label input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style for the custom radio button */
+  .radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Style for the checked custom radio button */
+  .radio-label input[type="radio"]:checked + .radio-custom::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+  
